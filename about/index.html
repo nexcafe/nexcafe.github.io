@@ -1,10 +1,11 @@
 
-  <!DOCTYPE HTML>
+  
+    <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   
-    <title>Category: 杂谈 | 本来无一物</title>
+    <title>about | 本来无一物</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="NeXCafe">
@@ -15,7 +16,7 @@
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="ragingat" />
-    <meta name="twitter:title" content="Category: 杂谈 | 本来无一物" />
+    <meta name="twitter:title" content="about | 本来无一物" />
       
     
     
@@ -26,9 +27,9 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-    <body>
-      <header>
-        <div>
+      <body>
+        <header>
+          <div>
 			<div id="textlogo">
 				<h1 class="site-name"><a href="/" title="本来无一物">本来无一物</a></h1>
 				<h2 class="blog-motto"><a href="/">for freedom, NeXCafe&#39;s blog</h2>
@@ -53,43 +54,55 @@
 				</ul>
 			</nav>
 </div>
-      </header>
+        </header>
     <div id="wrap">
 
-      <div id="container">
-        
-
-<div class="archive-title" >
-  <h2 class="category-icon">杂谈</h2>
-  
-</div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
-
-  <section class="post" itemscope itemprop="blogPost">
-    <div id="main-col" class="alignleft">
-    <time datetime="2014-05-14T05:03:01.000Z" itemprop="datePublished">
-      <a href="/2014/05/14/world-cup/" title="world cup" itemprop="url"  class="article-time">5月 14 2014</a>
+        <div id="container">
+          <div id="main" class="page" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+    <time datetime="2014-05-14T12:22:29.000Z" itemprop="datePublished">
+      <a href="/about/index.html" title="about" itemprop="url" class="article-time">5月 14 2014</a>
     </time>
-  <h1 itemprop="name" class="arch">
+
+  <h1 itemprop="name" class="article-name">
+    
+      <a href="/about/index.html" title="about" itemprop="url"><span>about</span></a>
+  </h1>
+</header>
+
+	<div class="article-content">
+		
+		
+		<p>graduate from BUPT</p>
+<p>working in baidu</p>
+<hr>
   
-    <a href="/2014/05/14/world-cup/" title="world cup" itemprop="url">
-        <span>
-            world cup
-        </span>
-    </a>
-  
-</h1>
+	</div>
+		<footer class="article-footer clearfix">
+
+
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://yoursite.com/about/index.html" data-title="about | 本来无一物" data-tsina="undefined" class="share clearfix">
+  </div>
+
 </div>
+</footer>   	       
+	</article>
+	
+	
+<section class="comment">
+	<div class="ds-thread"></div>
 </section>
 
-
-  </div>
-</div>
-
-      </div>
-  </div>
-      <footer><div id="footer" >
+</div>  
+        </div>
+    </div>
+        <footer><div id="footer" >
 	
     <div class="social-font" class="clearfix">
         
@@ -125,7 +138,7 @@
 		</p>
 </div>
 </footer>
-      <script src="/js/jquery-2.0.3.min.js"></script>
+        <script src="/js/jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
   $('.navbar').click(function(){
@@ -172,8 +185,69 @@ $(document).ready(function(){
 </script>
 
 
+<script type="text/javascript">
+$(document).ready(function(){
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});
+</script>
 
 
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"ragingcat"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+});
+</script>
 
 
 <script type="text/javascript">
@@ -186,6 +260,7 @@ ga('send', 'pageview');
 </script>
 
 
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -194,5 +269,6 @@ MathJax.Hub.Config({
 <script type="text/javascript"
    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-    </body>
-   </html>
+      </body>
+     </html>
+     
